@@ -13,6 +13,8 @@
 		A6370C7829FA3C8B00D53DCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6370C7629FA3C8B00D53DCC /* Main.storyboard */; };
 		A6370C7A29FA3C8C00D53DCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6370C7929FA3C8C00D53DCC /* Assets.xcassets */; };
 		A6370C7D29FA3C8C00D53DCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6370C7B29FA3C8C00D53DCC /* LaunchScreen.storyboard */; };
+		A6370C8529FA448D00D53DCC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6370C8429FA448D00D53DCC /* LoginViewController.swift */; };
+		A6370C8729FA60F800D53DCC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6370C8629FA60F800D53DCC /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		A6370C7929FA3C8C00D53DCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6370C7C29FA3C8C00D53DCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A6370C7E29FA3C8C00D53DCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6370C8429FA448D00D53DCC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A6370C8629FA60F800D53DCC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				A6370C7929FA3C8C00D53DCC /* Assets.xcassets */,
 				A6370C7B29FA3C8C00D53DCC /* LaunchScreen.storyboard */,
 				A6370C7E29FA3C8C00D53DCC /* Info.plist */,
+				A6370C8429FA448D00D53DCC /* LoginViewController.swift */,
+				A6370C8629FA60F800D53DCC /* LoginView.swift */,
 			);
 			path = FlexNet;
 			sourceTree = "<group>";
@@ -138,6 +144,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6370C8529FA448D00D53DCC /* LoginViewController.swift in Sources */,
+				A6370C8729FA60F800D53DCC /* LoginView.swift in Sources */,
 				A6370C7529FA3C8B00D53DCC /* ViewController.swift in Sources */,
 				A6370C7129FA3C8B00D53DCC /* AppDelegate.swift in Sources */,
 				A6370C7329FA3C8B00D53DCC /* SceneDelegate.swift in Sources */,
