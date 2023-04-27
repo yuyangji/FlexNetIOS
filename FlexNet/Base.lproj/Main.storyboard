@@ -19,10 +19,29 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="pQV-rp-SEy"/>
+                    <connections>
+                        <segue destination="ahz-hQ-rCZ" kind="show" identifier="SignUpSegue" id="NZY-IO-vhe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1052.6717557251909" y="-27.464788732394368"/>
+        </scene>
+        <!--Sign Up-->
+        <scene sceneID="gDd-Ap-iQi">
+            <objects>
+                <viewController title="Sign Up" id="ahz-hQ-rCZ" customClass="SignUpViewController" customModule="FlexNet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hp5-YA-YOw">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="MF2-pO-NZl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dzu-ib-DYZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tCY-wG-sMF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2001" y="-269"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="JQ8-FL-ABr">

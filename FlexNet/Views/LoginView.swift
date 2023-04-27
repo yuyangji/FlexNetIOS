@@ -8,15 +8,8 @@
 import UIKit
 
 extension UITextField {
-    func loginStyles(){
-        clearButtonMode = .whileEditing
-        translatesAutoresizingMaskIntoConstraints = false
-        layer.borderWidth = 1
-        layer.borderColor = UIColor.lightGray.cgColor
-        layer.cornerRadius = 15
-        layer.masksToBounds = true
-        leftViewMode = .always
-    }
+
+    
     
 }
 
@@ -44,45 +37,22 @@ class LoginView: UIView {
     }()
     
     
-     let emailTextField : UITextField = {
-        let textField = UITextField()
+     let emailTextField : TextFieldWithIcon = {
+        let textField = TextFieldWithIcon()
         textField.placeholder = "Email"
         textField.keyboardType = .emailAddress
-        textField.loginStyles()
-        
-        let padding :CGFloat = 12
-        let iconSize : CGFloat = 25
-        
-        let iconContainer = UIView(frame: CGRect(x: 0, y: 0, width: iconSize + padding, height: iconSize))
-        let iconView = UIImageView(image: UIImage(systemName: "envelope.fill"))
-        iconView.tintColor = .gray
-        iconView.contentMode = .scaleAspectFit
-        iconView.frame = CGRect(x: padding/2, y: 0, width: iconSize, height: iconSize)
-        iconContainer.addSubview(iconView)
-        textField.leftView = iconContainer
+         textField.addIcon(icon: UIImage(systemName: "envelope")!)
         return textField
     }()
     
     
     
-     let passwordTextField:UITextField = {
-        let textField = UITextField()
+     let passwordTextField:TextFieldWithIcon = {
+        let textField = TextFieldWithIcon()
         textField.placeholder = "Password"
         textField.keyboardType = .default
         textField.textContentType = .password
-        textField.loginStyles()
-        
-        let padding :CGFloat = 12
-        let iconSize : CGFloat = 25
-        
-        let iconContainer = UIView(frame: CGRect(x: 0, y: 0, width: iconSize + padding, height: iconSize))
-        let iconView = UIImageView(image: UIImage(systemName: "lock.fill"))
-        iconView.tintColor = .gray
-        iconView.contentMode = .scaleAspectFit
-        iconView.frame = CGRect(x: padding/2, y: 0, width: iconSize, height: iconSize)
-        iconContainer.addSubview(iconView)
-        textField.leftView = iconContainer
-        
+         textField.addIcon(icon: UIImage(systemName: "lock.fill")!)
         return textField
     }()
 
@@ -128,6 +98,7 @@ class LoginView: UIView {
     private func setUpViews(){
         addSubview(titleLabel)
         addSubview(descriptionLabel)
+        
         addSubview(emailTextField)
         addSubview(passwordTextField)
         addSubview(loginButton)
